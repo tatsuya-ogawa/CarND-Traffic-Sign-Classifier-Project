@@ -134,7 +134,7 @@ If an iterative approach was chosen:
 * Which parameters were tuned? How were they adjusted and why?
   * Epoch and drop out probability were all tuned .
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-  *
+  *  I think the most important thing was data augmentation. When I used the default training dataset,some class were frequently misrecognized.But where I enhanced data to balancing class,then it was improved. 
 
 ###Test a Model on New Images
 
