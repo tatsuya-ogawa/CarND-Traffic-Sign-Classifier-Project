@@ -54,7 +54,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-[barchartbefore]: ./images/bar_chart_before.png "Barchart before"
+![barchartbefore](./images/bar_chart_before.png)
 
 ###Design and Test a Model Architecture
 
@@ -64,10 +64,12 @@ As a first step, I decided to convert the images to grayscale because ...
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-[trainimages]: ./images/train_images.png "Train Images"
+![trainimages](./images/train_images.png)
 
 I decided to generate additional data because some train data count was lower than 1000
 to avoid unbalanced training. 
+The following is result counts.
+![barchartenhanced](./images/bar_chart_enhanced.png)
 
 To add more data to the the data set, I used the following techniques
 * random_brightness: Adjust brightness of image by random factor.Learned from [link](https://www.tensorflow.org/api_docs/python/tf/image/random_brightness)
@@ -77,10 +79,7 @@ To add more data to the the data set, I used the following techniques
 
 Here is an example of an original image and an augmented image:
 
-[normalizedimages]: ./images/normalized_images.png "Normalized Images"
-
-The difference between the original data set and the augmented data set is the following ... 
-
+![normalizedimages](./images/normalized_images.png)
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
@@ -128,8 +127,8 @@ If an iterative approach was chosen:
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
   * The validation accuracy was converged along with the test accuracy. 
   
-  [testaccuracy]: ./images/test_accuracy.png "Test Accuracy"
-  [validationaccuracy]: ./images/validation_accuracy.png.png "Validation Accuracy"
+![testaccuracy](./images/test_accuracy.png)
+![validationaccuracy](./images/validation_accuracy.png)
     
 * Which parameters were tuned? How were they adjusted and why?
   * Epoch and drop out probability were all tuned .
@@ -142,7 +141,7 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-[mydata]:  ./images/my_images.png "My Images"
+![mydata](./images/my_images.png)
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
