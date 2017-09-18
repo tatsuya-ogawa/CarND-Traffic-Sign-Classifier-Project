@@ -141,15 +141,24 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
+* Following images were collected.
+
 ![mydata](./images/my_images.png)
+
+* I got following results(five top results were displayed as title). 
+
+![mydata_result](./images/my_images_result.png)
+
+The model was able to correctly guess 43 of the 43 traffic signs, which gives an accuracy of 100%. 
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-This is displayed in answer 1.
+Accuracy 100% is perfect results,but compared to test set sampled data were little.So more data were sampled it might be incorrected.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 This is displayed in answer 1.
+The only "26, Traffic signals" was probability 95%,the others were 100% prediction to correct sign.
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
